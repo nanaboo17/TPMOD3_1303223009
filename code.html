@@ -1,0 +1,156 @@
+# TPMOD3_1303223009
+TP MOD 3 IT-46-02 WEBPRO
+
+<!DOCTYPE html> 
+<!-- a) Fungsi utama: Menyatakan bahwa ini adalah dokumen HTML5 -->
+<html>
+    <head>
+        <!-- a) Fungsi utama: Tag <head> berisi informasi tentang dokumen seperti judul, metadata, skrip, dan link stylesheet -->
+        <!-- b) Diperlukan untuk menyimpan informasi halaman yang tidak ditampilkan langsung pada layar -->
+        <title>TP MOD 3</title>
+        <!-- a) Fungsi utama: <title> menentukan judul yang akan muncul di tab browser -->
+        <!-- b) Diletakkan di dalam <head> karena ini adalah metadata untuk halaman -->
+    </head>
+    <body>
+        <!-- a) Fungsi utama: Tag <body> berisi semua konten yang akan ditampilkan pada halaman web -->
+        <!-- b) Diperlukan untuk menampilkan elemen-elemen visual halaman seperti teks, gambar, tabel, dll. -->
+        
+        <h1>Profil Pribadi</h1>
+        <!-- a) Fungsi utama: <h1> adalah heading paling besar dan digunakan untuk judul utama halaman -->
+        <!-- b) Diletakkan di sini untuk memberi judul bagian profil pribadi -->
+        
+        <div>
+            <!-- a) Fungsi utama: <div> digunakan sebagai kontainer untuk mengelompokkan elemen-elemen -->
+            <!-- b) Digunakan untuk mengelompokkan tabel yang menampilkan foto profil dan video -->
+            <table>
+                <!-- a) Fungsi utama: <table> digunakan untuk menampilkan data dalam bentuk tabel -->
+                <!-- b) Digunakan untuk membuat tabel dengan dua kolom, satu untuk foto profil dan satu untuk video -->
+                
+                <tr>
+                    <!-- a) Fungsi utama: <tr> mendefinisikan baris dalam tabel -->
+                    <!-- b) Digunakan untuk membuat baris pertama, yaitu header tabel -->
+                    <th>Foto Profil</th>
+                    <!-- a) Fungsi utama: <th> mendefinisikan sel header dalam tabel -->
+                    <!-- b) Menyatakan judul kolom pertama, yaitu untuk foto profil -->
+                    
+                    <th>Video Perkenalan</th>
+                    <!-- b) Menyatakan judul kolom kedua, yaitu untuk video perkenalan -->
+                </tr>
+                <tr>
+                    <!-- b) Baris kedua digunakan untuk memasukkan konten, yaitu foto profil dan video -->
+                    <td><img src="pp.jpg" width="350" height="500"></td>
+                    <!-- a) <img> digunakan untuk menampilkan gambar di halaman web -->
+                    <!-- b) Digunakan untuk menampilkan gambar profil dengan lebar 350px dan tinggi 500px -->
+                    
+                    <td>
+                        <video width="350" height="500" controls>
+                            <!-- a) <video> digunakan untuk menampilkan video yang dapat diputar oleh pengguna -->
+                            <!-- b) Video dengan ukuran lebar 350px dan tinggi 500px -->
+                            <source src="video.mp4"  type="video/mp4">
+                            <!-- a) <source> mendefinisikan file video yang digunakan oleh tag <video> -->
+                            <!-- b) Menyatakan bahwa file video ini dalam format mp4 -->
+                            Your browser does not support the video tag.
+                            <!-- Pesan fallback jika browser tidak mendukung elemen video -->
+                        </video>
+                    </td>                    
+                </tr>
+            </table>
+        </div>
+
+        <div>
+            <!-- b) Div ini mengelompokkan bagian "Tentang Saya" -->
+            <h1>Tentang Saya</h1>
+            <!-- b) Memberikan judul bagian tentang diri pengguna -->
+            Hi there! I'm not that special, so there's nothing you have to know about me. I'm just one of the mankind that stuck in this university.
+            <!-- b) Konten deskripsi singkat tentang pengguna -->
+        </div>
+
+        <div>
+            <!-- b) Div ini mengelompokkan bagian "Keterampilan" -->
+            <h1>Keterampilan</h1>
+            <!-- b) Judul bagian keterampilan pengguna -->
+            
+            <table>
+                <!-- a) <table> digunakan untuk menyajikan data keterampilan dalam format tabel -->
+                <!-- b) Tabel ini digunakan untuk menyajikan keterampilan dan tingkat penguasaan pengguna -->
+                
+                <tr>
+                    <th>Keterampilan</th>
+                    <!-- b) Header kolom pertama untuk keterampilan -->
+                    <th>Tingkat</th>
+                    <!-- b) Header kolom kedua untuk tingkat penguasaan -->
+                </tr>
+                <tr>
+                    <td>HTML/CSS</td>
+                    <!-- b) Menyatakan keterampilan pertama yaitu HTML/CSS -->
+                    <td>Mahir</td>
+                    <!-- b) Tingkat penguasaan untuk HTML/CSS adalah "Mahir" -->
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>Menengah</td>
+                </tr>
+                <tr>
+                    <td>Python</td>
+                    <td>Pemula</td>
+                </tr>
+            </table>
+        </div>
+
+        <div>
+            <!-- b) Div ini mengelompokkan form kontak pengguna -->
+            <h1>Hubungi Saya</h1>
+            <!-- b) Judul bagian formulir kontak -->
+            
+            <form>
+                <!-- a) <form> digunakan untuk mengumpulkan input pengguna dan mengirimkannya -->
+                <!-- b) Digunakan untuk membuat form yang bisa diisi pengguna untuk mengirim pesan -->
+                
+                <table>
+                    <tr>
+                        <td>Nama: </td>
+                        <td><input type="text" name="nama" required /></td>
+                        <!-- a) <input> digunakan untuk menerima input dari pengguna -->
+                        <!-- b) Digunakan untuk menerima input nama pengguna dan bersifat wajib -->
+                    </tr>
+                    <tr>
+                        <td>Email: </td>
+                        <td><input type="text" name="email" required /></td>
+                        <!-- b) Digunakan untuk input email pengguna dan bersifat wajib -->
+                    </tr>
+                    <tr>
+                        <td>Pesan: </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><textarea name="pesan" rows="10" cols="30"></textarea></td>
+                        <!-- a) <textarea> digunakan untuk input teks dalam bentuk area yang lebih besar -->
+                        <!-- b) Digunakan untuk input pesan yang lebih panjang dari pengguna -->
+                    </tr>
+                    <tr>
+                        <td><button type="submit">Kirim Pesan</button></td>
+                        <!-- a) <button> digunakan untuk membuat tombol yang bisa diklik -->
+                        <!-- b) Tombol untuk mengirimkan form -->
+                        <td></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+
+        <div>
+            <!-- b) Div ini mengelompokkan link media sosial -->
+            <h1>Media Sosial:</h1>
+            <!-- b) Judul bagian media sosial -->
+            
+            <a href="https://instagram.com/davinasunjayaa">Instagram</a> |
+            <!-- a) <a> digunakan untuk membuat hyperlink ke URL tertentu -->
+            <!-- b) Link ke profil Instagram pengguna -->
+            
+            <a href="https://github.com/nanaboo17">GitHub</a> |
+            <!-- b) Link ke profil GitHub pengguna -->
+            
+            <a href="https://www.linkedin.com/in/davina-sunjaya-6a19431a9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">LinkedIn</a>
+            <!-- b) Link ke profil LinkedIn pengguna -->
+        </div>
+    </body>
+</html>
